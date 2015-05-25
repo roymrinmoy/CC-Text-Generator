@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>CC Text Generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <div class="container">
+    <h2>CC Text Generator</h2>
+    <form id="video-submit">
+      <input id="video-link" type="text" />
+      <input class="button" id="start" type="submit" value="Start!" />
+    </form>
+    <div id="video-container" class="wrapper">
+      <div id="video-box" class="half"></div>
+      <div id="dashboard-container" class="half">
+        <form id="dashboard">
+          <span>Press the Left Arrow & Right Arrow to track through the video. Release to pause. Use Up Arrow to start CC text time and Down Arrow to stop CC text time.</span>
+          <div id="showStartTime" class="half"></div><div id="showStopTime" class="half"></div>
+          <input id="ccTextBit" type="text" />
+          <input id="ccTextBitSubmit" type="submit">
+        </form>
+        <textarea id="generated-cc" class="wrapper"></textarea>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
